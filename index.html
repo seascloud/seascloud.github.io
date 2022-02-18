@@ -1,0 +1,865 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="generator" content="Hugo 0.91.2" />
+
+    <meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+<script>
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=GTM-000000' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-000000');
+</script>
+
+
+<title></title>
+<style>
+     
+    .rad-fade-in {
+        will-change: opacity, transform;
+        animation-name: rad-fade-in-fallback;
+        animation-duration: 5s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in-fallback {
+        0% {
+            opacity: 0;
+        }
+
+        75% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .fonts-loaded .rad-fade-in.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+    }
+
+    .fonts-loaded .rad-fade-in.rad-animate {
+        animation-name: rad-fade-in;
+        animation-duration: 1.1s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+     
+    .rad-fade-in-long {
+        will-change: opacity, transform;
+        animation-name: rad-fade-in-long-fallback;
+        animation-duration: 8s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in-long-fallback {
+        0% {
+            opacity: 0;
+        }
+
+        75% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .fonts-loaded .rad-fade-in-long.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+    }
+
+    .fonts-loaded .rad-fade-in-long.rad-animate {
+        animation-name: rad-fade-in-long;
+        animation-duration: 2s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in-long {
+        0% {
+            opacity: 0;
+        }
+
+        20% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+     
+    .rad-fade-down {
+        will-change: opacity, transform;
+        animation-name: rad-fade-down-fallback;
+        animation-duration: 5s;
+        animation-fill-mode: both;
+        transform: translateY(-30px);
+    }
+
+    @keyframes rad-fade-down-fallback {
+        0% {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        75% {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .fonts-loaded .rad-fade-down.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    .fonts-loaded .rad-fade-down.rad-animate {
+        animation-name: rad-fade-down;
+        animation-duration: 1.1s;
+    }
+
+    @keyframes rad-fade-down {
+        0% {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+     
+    .rad-scale-down {
+        will-change: opacity, transform;
+        animation-name: rad-scale-down-fallback;
+        animation-duration: 5s;
+        animation-fill-mode: both;
+        transform-origin: 50% 0;
+    }
+
+    @keyframes rad-scale-down-fallback {
+        0% {
+            opacity: 0;
+            transform: scaleY(0.95);
+        }
+
+        75% {
+            opacity: 0;
+            transform: scaleY(0.95);
+        }
+
+        100% {
+            opacity: 1;
+            transform: scaleY(1);
+        }
+    }
+
+    .fonts-loaded .rad-scale-down.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+        transform: scaleY(0.95);
+    }
+
+    .fonts-loaded .rad-scale-down.rad-animate {
+        animation-name: rad-scale-down;
+        animation-duration: 1.1s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-scale-down {
+        0% {
+            opacity: 0;
+            transform: scaleY(0.95);
+        }
+
+        100% {
+            opacity: 1;
+            transform: scaleY(1);
+        }
+    }
+</style>
+
+
+<link rel="stylesheet" href="https://raditian-hugo.radity.com/css/main.css"/>
+
+<link rel="stylesheet" href="https://raditian-hugo.radity.com/css/rad-icons.css"/>
+
+<link rel="stylesheet" href="https://raditian-hugo.radity.com/css/custom.css"/>
+
+
+    
+
+
+</head>
+
+<body>
+
+	<header class="header fixed-top rad-animation-group" id="header">
+  <div class="container rad-fade-in">
+    <nav class="navbar navbar-expand-lg navbar-light p-0">
+      <a class="navbar-brand" href="https://raditian-hugo.radity.com/">
+        <span>子非鱼</span>
+        <span>tate</span>
+        
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent, #header"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-lg-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://raditian-hugo.radity.com/">HOME</a>
+          </li>
+          
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#about"
+              >技能证书</a
+            >
+          </li>
+          
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#portfolio"
+              >项目描述</a
+            >
+          </li>
+          
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#contact"
+              >联系本人</a
+            >
+          </li>
+          
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+
+	
+	
+<section class="rad-showcase rad-showcase--index rad-animation-group rad-fade-down">
+  <div class="rad-showcase__bg">
+    <img
+      class="lozad img-responsive"
+      src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+      data-src="https://raditian-hugo.radity.com/img/showcase/showcase.png"
+      data-srcset="https://raditian-hugo.radity.com/img/showcase/showcase.png 1x, https://raditian-hugo.radity.com/img/showcase/showcase@2x.png 2x"
+      alt=""
+    />
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-8 col-lg-7 col-xl-6">
+        <h1 class="display-1">
+          Hello, I’m 子非鱼tate.
+          <br />
+          <span
+            >DBA 数据库管理员</span
+          >
+        </h1>
+        <p class="lead">
+           <a target='_blank'>9年</a> 数据库管理工作, 目前工作在西安，将来也会选择在 <a target='_blank'>西安</a>工作. 时光飞逝，2022年已经35岁了. 人到中年，更多的时候会选择收入与稳定的平衡。过去的工作经历主要以<a target='_blank'>oracle、vmware</a>为主，<a target='_blank'>postgresql</a>也可以熟练操作，包括patroni、repmgr集群等架构设计与实施。
+	 <br><P>熟悉shell脚本开发工作，<a target='_blank'>无法承担诸如java、c++等对象类语言的开发工作</a>。熟悉kubernetes以及docker的概念、组件、原理，无实际相关工作经验。
+        </p>
+        <a
+          href="https://www.126.com"
+          class="btn btn-primary"
+        >
+          <i class="icon-mail-fill"></i>
+          Contact
+        </a>
+      </div>
+    </div>
+    <div class="row platform-links">
+      <div class="col-12">
+        
+        <a href="https://www.linkedin.com/company/radity/" target="_blank"
+          ><i class="icon-linkedin-line"></i
+        ></a>
+        
+        <a href="https://github.com/radity" target="_blank"
+          ><i class="icon-github-line"></i
+        ></a>
+        
+        <a href="https://twitter.com/radity" target="_blank"
+          ><i class="icon-twitter-line"></i
+        ></a>
+        
+        <a href="https://dribbble.com/radity" target="_blank"
+          ><i class="icon-dribbble-line"></i
+        ></a>
+        
+        <a href="https://www.behance.net/radity-digital" target="_blank"
+          ><i class="icon-behance-line"></i
+        ></a>
+        
+        <a href="https://www.youtube.com/channel/UCojEc6SPO-W1_CoeHhK9-Zw" target="_blank"
+          ><i class="icon-youtube-line"></i
+        ></a>
+        
+        <a href="https://www.instagram.com/teamradity/" target="_blank"
+          ><i class="icon-instagram-line"></i
+        ></a>
+        
+        <a href="https://www.facebook.com/raditycom/" target="_blank"
+          ><i class="icon-facebook-line"></i
+        ></a>
+        
+        <a href="https://raditian-hugo.radity.com/" target="_blank"
+          ><i class="icon-codepen-line"></i
+        ></a>
+        
+        <a href="https://www.yelp.com/" target="_blank"
+          ><i class="icon-yelp-line"></i
+        ></a>
+        
+      </div>
+    </div>
+  </div>
+  <div class="rad-showcase__bg rad-showcase__bg--mobile">
+    <img
+      class="lozad img-responsive"
+      src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+      data-src="https://raditian-hugo.radity.com/img/showcase/showcase-mobile.jpg"
+      alt=""
+    />
+  </div>
+</section>
+
+
+	
+	
+<section class="section rad-animation-group pb-0" id="about">
+  <div class="container rad-fade-down">
+    <div class="row d-flex flex-column-reverse flex-md-row">
+      <div class="about__profile-picture col-12 col-md-6">
+        <img
+          class="lozad img-responsive image-left-overflow"
+          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+          data-src="https://raditian-hugo.radity.com/img/who-am-i/user2.png"
+          data-srcset="https://raditian-hugo.radity.com/img/who-am-i/user2.png 1x, https://raditian-hugo.radity.com/img/who-am-i/user-picture@2x.png 2x"
+          alt="Profile Picture"
+        />
+      </div>
+      <div class="col-12 col-md-6 my-auto my-auto">
+        <h2>证书及技能</h2>
+        <p class="lead">
+          <p class="lead"> 目前依旧想从事与数据库相关以及项目管理类工作，可以接受必要性加班。目前持有以下认证： </p> <p> 1. <a target="_blank" style="color:red">OCP( oracle database 11g Certified Professional)</a><br> 2. <a target="_blank">PingCAP Certified TIDB associate[TiDB version 3.0]</a><br> 3. <a target="_blank">IBM Certified System Administrator AIX 7</a><br> 4. <a target="_blank">ITSS工程师</a><br> </p> <p class="lead"> 工作以数据库为主，熟练掌握oracle 迁移、备份/恢复、容灾等架构方案设计与实施， 熟练掌握oracle adg、ogg配置工作。熟练掌握linux、aix操作系统，由于集成项目做过不少，同样熟悉存储以及san交换机的配置工作，了解基本的网络知识。 </p>
+        </p>
+        <a
+          href="https://raditian-hugo.radity.com/"
+          target="_blank"
+          class="btn btn-primary"
+        >
+          <i class="icon-smile-fill"></i>
+          About Me
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+	
+	
+<section class="section section--border-bottom rad-animation-group">
+    <div class="container">
+        <div class="row rad-fade-down">
+            <div class="col-12">
+                <h2>Education</h2>
+                <div class="row pt-2 pt-md-4">
+                    
+                    <div class="col-12 col-sm-6 mb-4 mb-sm-0">
+                        <div class="education">
+                            <div class="education__date">2005-2009</div>
+                            <div class="education__title">天津科技大学</div>
+                            <div class="education__degree">
+                                电子出版技术
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-sm-6 mb-4 mb-sm-0">
+                        <div class="education">
+                            <div class="education__date">2005-2009</div>
+                            <div class="education__title">Tianjin University of Science and Technology</div>
+                            <div class="education__degree">
+                                Electronic publishing technology
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+	
+	
+<section id="experience" class="section section--border-bottom rad-animation-group">
+    <div class="container">
+        <div class="row flex-column-reverse flex-md-row rad-fade-down">
+            <div class="col-12 col-sm-6 mt-5 mt-sm-0 ">
+                
+                <div class="experience mb-1 mb-sm-0 pt-1 pb-1">
+                    <div class="experience__date">2015年8月 - 至今</div>
+                    <div class="experience__title">高级工程师(数据库/虚拟化)</div>
+                    <div class="experience__company">北京富通东方科技有限公司</div>
+                </div>
+                
+                <div class="experience mb-1 mb-sm-0 pt-1 pb-1">
+                    <div class="experience__date">2013年11月 - 2015年8月</div>
+                    <div class="experience__title">高级工程师(数据库/主机)</div>
+                    <div class="experience__company">北京市太极华青信息系统有限公司</div>
+                </div>
+                
+                <div class="experience mb-1 mb-sm-0 pt-1 pb-1">
+                    <div class="experience__date">2011年4月 - 2013年9月</div>
+                    <div class="experience__title">售后服务工程师</div>
+                    <div class="experience__company">重庆维普资讯有限公司</div>
+                </div>
+                
+            </div>
+            <div class="col-12 col-sm-6">
+                <h2>工作经验</h2>
+                <p class="lead">
+                    超过10年工作经验，9年数据库相关工作经验。在过往的工作经历当中，很荣幸都遇到了友好的团队及领导，彼此之间共同成长，共同攻克难题。部分项目列表：<br><p> - 云平台建设 成都农商行 2015  <br> - 运营监督硬件采购 成都农商行  <br> - 小型机维保 四川省财政厅  <br> - oracle exdata维保 新疆特变电 <br> - 西京医院系统软件及数据库维保  <br> - 西安交大一附院pacs数据库迁移  <br> - 西京医院his数据库迁移 2017 oracle <br> - 北京中意人寿lis迁移 <br> - 系统更新 重庆维普资讯 <br> - vmware实施 西安局货运站（5站段） <br> 
+                </p>
+                <a href="https://www.linkedin.com/company/radity/" class="btn btn-primary"
+                   target="_blank">
+                    <i class="icon-linkedin-fill"></i>
+                    Linkedin
+                    <i class="icon-arrow-right"></i></a>
+                <a href="https://raditian-hugo.radity.com/" class="btn btn-frameless"
+                   target="_blank">
+                    <i class="icon-profile-fill"></i>
+                    Download My Resume
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+	
+	
+<section id="portfolio" class="section section--border-bottom">
+  <div class="container">
+    <h2 class=" rad-animation-group rad-fade-down">
+      项目概述
+    </h2>
+    <div class="row row--padded rad-animation-group rad-fade-down">
+      <div class="col-12">
+        <div class="clients">
+          
+          <div class="clients__item">
+            <a href="#">
+              <img
+                class="lozad img-responsive"
+                src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                data-src="https://raditian-hugo.radity.com/img/clients/oracle.png"
+                data-srcset="https://raditian-hugo.radity.com/img/clients/oracle.png 1x, https://raditian-hugo.radity.com/img/clients/asgardia@2x.png 2x"
+                alt="oracle"
+              />
+            </a>
+          </div>
+          
+          <div class="clients__item">
+            <a href="#">
+              <img
+                class="lozad img-responsive"
+                src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                data-src="https://raditian-hugo.radity.com/img/clients/pg.png"
+                data-srcset="https://raditian-hugo.radity.com/img/clients/pg.png 1x, https://raditian-hugo.radity.com/img/clients/earth-2@2x.png 2x"
+                alt="PostgreSQL"
+              />
+            </a>
+          </div>
+          
+          <div class="clients__item">
+            <a href="#">
+              <img
+                class="lozad img-responsive"
+                src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                data-src="https://raditian-hugo.radity.com/img/clients/k8s.png"
+                data-srcset="https://raditian-hugo.radity.com/img/clients/k8s.png 1x, https://raditian-hugo.radity.com/img/clients/goldline@2x.png 2x"
+                alt="kubernetes"
+              />
+            </a>
+          </div>
+          
+          <div class="clients__item">
+            <a href="#">
+              <img
+                class="lozad img-responsive"
+                src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                data-src="https://raditian-hugo.radity.com/img/clients/docker.png"
+                data-srcset="https://raditian-hugo.radity.com/img/clients/docker.png 1x, https://raditian-hugo.radity.com/img/clients/kanba@2x.png 2x"
+                alt="docker"
+              />
+            </a>
+          </div>
+          
+          <div class="clients__item">
+            <a href="#">
+              <img
+                class="lozad img-responsive"
+                src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                data-src="https://raditian-hugo.radity.com/img/clients/vmware.png"
+                data-srcset="https://raditian-hugo.radity.com/img/clients/vmware.png 1x, https://raditian-hugo.radity.com/img/clients/zoo-tv@2x.png 2x"
+                alt="vmware"
+              />
+            </a>
+          </div>
+          
+          <div class="clients__item">
+            <a href="#">
+              <img
+                class="lozad img-responsive"
+                src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                data-src="https://raditian-hugo.radity.com/img/clients/mysql.png"
+                data-srcset="https://raditian-hugo.radity.com/img/clients/mysql.png 1x, https://raditian-hugo.radity.com/img/clients/ztos@2x.png 2x"
+                alt="Mysql"
+              />
+            </a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <div
+      class="row row--padded rad-animation-group rad-fade-down flex-column-reverse flex-md-row"
+    >
+      
+      <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
+        <h3>西京医院his核心业务迁移</h3>
+        <p class="lead">
+          医院HIS数据库之前在IBM小型机上运行，综合性能以及故障率等原因，需要将<a target='_blank'>oracle数据库</a>从<a target='_blank'>IBM小型机迁移到x86架构，从10g升级至11g</a>。用到的工具ogg、expdp/impdp等。迁移完成后部署一套adg环境。难点是客户要求的停机时间很短。<br><p> 1. 硬件上架->系统安装->数据库测试环境部署<br> 2. 压力测试->OGG部署<br> 3. 迁移时间测试->在停机窗口通过ogg完成迁移<br> 4. 迁移完成后部署Adg灾备系统->维保.
+        </p>
+        <a href="https://raditian-hugo.radity.com/" class="btn btn-primary"
+          >Case 2017<i class="icon-arrow-right"></i
+        ></a>
+      </div>
+      <div class="col-12 col-md-7 pl-md-0 text-right">
+        <img
+          class='lozad img-responsive img-clip-left-backward'
+          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+          data-src="https://raditian-hugo.radity.com/img/works/radity2.png"
+          data-srcset="https://raditian-hugo.radity.com/img/works/radity2.png 1x, https://raditian-hugo.radity.com/img/works/radity-finance@2x.jpg 2x"
+          alt="西京医院his核心业务迁移"
+        />
+      </div>
+      
+    </div>
+    
+    <div
+      class="row row--padded rad-animation-group rad-fade-down "
+    >
+      
+      <div class="col-12 col-md-7 pl-md-0 text-right">
+        <img
+          class='lozad img-responsive img-clip-right-backward'
+          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+          data-src="https://raditian-hugo.radity.com/img/works/swiss.jpeg"
+          data-srcset="https://raditian-hugo.radity.com/img/works/swiss.jpeg 1x, https://raditian-hugo.radity.com/img/works/swissfintech@2x.jpg 2x"
+          alt="成都农商银行云平台二期建设"
+        />
+      </div>
+      <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
+        <h3>成都农商银行云平台二期建设</h3>
+        <p class="lead">
+          本项目中，我作为项目负责人负责整个项目的集成实施工作。 该项目采用华为<a target='_blank'>E9000刀箱</a>和<a target='_blank'>IBM pureflex刀箱</a>作为硬件基础设施， 系统采用<a target='_blank'>vmware exsi6.0和vios</a>作为基础，搭建一套高可用、高效、高利用率的虚拟化环境。 最终目标实现19套业务系统开发/测试环境的全自动部署。<br><p> 1. 我方负责基础架构的实施，刀片机及存储的实施以及扩容<br> 2. vmware虚拟化搭建工作<br> 3. 操作系统，oracle数据库软件等部署工作<br> 
+        </p>
+        <a href="https://raditian-hugo.radity.com/" class="btn btn-primary"
+          >Case 2015<i class="icon-arrow-right"></i
+        ></a>
+      </div>
+      
+    </div>
+    
+    <div
+      class="row row--padded rad-animation-group rad-fade-down flex-column-reverse flex-md-row"
+    >
+      
+      <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
+        <h3>PostgreSQL &amp; k8s &amp; docker</h3>
+        <p class="lead">
+          关于过往的项目我不想描述太多， 基本上综合了数据库、vmware、存储、交换机等传统集成架构所接触的软硬件。<br><p> 近几年科技发展迅猛，开源数据库层出不穷，互联网强势崛起，且新冠疫情以来，扰乱了很多计划，也打破了僵局。这两年同紫光云的同学一同研究<a target='_blank'>postgresql，kubernetes，docker</a>，在云平台及本地搭建各种 适合当下的流行趋势的各种环境及平台。遗憾的是并没有机会在大型生产环境应用所掌握的技能。
+        </p>
+        <a href="https://raditian-hugo.radity.com/" class="btn btn-primary"
+          >Case 2021<i class="icon-arrow-right"></i
+        ></a>
+      </div>
+      <div class="col-12 col-md-7 pl-md-0 text-right">
+        <img
+          class='lozad img-responsive img-clip-left-forward'
+          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+          data-src="https://raditian-hugo.radity.com/img/works/robo-advisor.jpg"
+          data-srcset="https://raditian-hugo.radity.com/img/works/robo-advisor.jpg 1x, https://raditian-hugo.radity.com/img/works/robo-advisor@2x.jpg 2x"
+          alt="PostgreSQL &amp; k8s &amp; docker"
+        />
+      </div>
+      
+    </div>
+    
+  </div>
+</section>
+
+
+	
+	
+<section class="section rad-animation-group section--border-bottom">
+    <div class="container">
+        <h2 class="rad-fade-down">其他描述</h2>
+        <div class="row row--padded mb-0 rad-fade-down">
+            
+            <div class="col-12 col-md-4 mb-5 mb-md-0 testimonial">
+                <i class="icon-quote"></i>
+                <p>
+                    他不懂得在人生的旅途上，非得越过一大片干旱贫瘠、地形险恶的荒野，才能跨入活生生的现实世界。所谓“青春多幸福”的说法，不过是一种幻觉，是青春已逝的人们的一种幻觉。
+                </p>
+                <div class="testimonial__author">
+                   
+                    <div class="testimonial__author-info">
+                        <h4>毛姆</h4>
+                        <span>《人生的枷锁》</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-4 mb-5 mb-md-0 testimonial">
+                <i class="icon-quote"></i>
+                <p>
+                    我总觉得大多数人这样度过一生好像欠缺点什么。我承认这种生活的社会价值，我也看到了它的井然有序的幸福，但是我的血液里却有一种强烈的愿望，渴望一种更狂放不羁的旅途。我的心渴望一种更加惊险的生活。
+                </p>
+                <div class="testimonial__author">
+                   
+                    <div class="testimonial__author-info">
+                        <h4>毛姆</h4>
+                        <span>《月亮与六便士》</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-4 mb-5 mb-md-0 testimonial">
+                <i class="icon-quote"></i>
+                <p>
+                    生活中就有这样的事：你接连数月每天都碰到一个人，于是你同他的关系便十分亲密起来，你当时甚至会想没有了这个人还不知怎么生活呢。随后两人分离了，但一切仍按先前的格局进行着。你原先认为一刻也离不开的伙伴，此时却变得可有可无，日复一日，久而久之，你甚至连想都不想他了。
+                </p>
+                <div class="testimonial__author">
+                   
+                    <div class="testimonial__author-info">
+                        <h4>毛姆</h4>
+                        <span>《人生的枷锁》</span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+	
+	
+<section id="contact" class="section section--contact pt-0">
+    <div class="container">
+        <div class="contact">
+            <h2>Contact</h2>
+            <div class="row pt-2">
+                <div class="col-12 col-lg-7">
+                    <form action="#" method="">
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <input type="text" name="" id="full_name"
+                                       placeholder="Full Name"/>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input type="text" name="" id="email"
+                                       placeholder="Email Address"/>
+                            </div>
+                        </div>
+                        <div class="row pt-4">
+                            <div class="col-12">
+                                <textarea name="" id="message"
+                                          cols="30" rows="3" placeholder="这里并不能留言或者发送邮件 "></textarea>
+                            </div>
+                        </div>
+                        <div class="row pt-4">
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="icon-mail-fill"></i>
+                                    Send Message
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12 col-lg-5 contact__info">
+                    <h4>Phone Number</h4>
+                    <span>&#43;86 17791639955</span>
+                    <h4>Email</h4>
+                    <span><a>sktate@126.com</a></span>
+                    <h4>Address</h4>
+                    <span>陕西，西安 凤城一路</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+	
+	
+
+	
+
+	<footer class="footer">
+  <div class="container">
+    <div class="footer__left">
+      <div class="footer__copy">
+        © Raditian. All rights reserved.
+      </div>
+    </div>
+    <div class="footer__links">
+      <ul class="navbar-nav ">
+        <li class="nav-item">
+          <a class="nav-link" href="/">HOME</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#about">技能证书</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#portfolio">项目描述</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">联系本人</a>
+        </li>
+        
+      </ul>
+    </div>
+    <div class="footer__right">
+      <a href="#"
+        ><img
+          src="https://raditian-hugo.radity.com/img/general/design-and-code-radity.png"
+          srcset="https://raditian-hugo.radity.com/img/general/design-and-code-radity.png 1x, https://raditian-hugo.radity.com/img/general/design-and-code-radity@2x.png 2x"
+          alt="Design &amp; Code - Radity"
+      /></a>
+    </div>
+  </div>
+</footer>
+
+    <script src='https://raditian-hugo.radity.com/js/rad-animations.js'></script>
+<script src='https://raditian-hugo.radity.com/js/library/lozad.min.js'></script>
+<script>
+  window.addEventListener("load", function() {
+    var observer = window.lozad(".lozad", {
+      rootMargin: window.innerHeight / 2 + "px 0px",
+      threshold: 0.01
+    }); 
+    observer.observe();
+  });
+</script>
+<script src='https://raditian-hugo.radity.com/js/library/jquery-3.3.1.slim.min.js'></script>
+<script src='https://raditian-hugo.radity.com/js/library/bootstrap.min.js'></script>
+<script src='https://raditian-hugo.radity.com/js/sticky-header.js'></script>
+<script src='https://raditian-hugo.radity.com/js/library/smooth-scroll.polyfills.min.js'></script>
+<script src='https://raditian-hugo.radity.com/js/library/fontfaceobserver.js'></script>
+<script>
+  (function(w) {
+    
+    if (w.document.documentElement.className.indexOf("fonts-loaded") > -1) {
+      return;
+    }
+    var fontA = new w.FontFaceObserver("Inter", {
+      weight: 300
+    });
+    var fontB = new w.FontFaceObserver("Inter", {
+      weight: 400
+    });
+    var fontC = new w.FontFaceObserver("Inter", {
+      weight: 500
+    });
+    var fontD = new w.FontFaceObserver("Inter", {
+      weight: 600
+    });
+    var fontE = new w.FontFaceObserver("Inter", {
+      weight: 700
+    });
+    var fontF = new w.FontFaceObserver("Inter", {
+      weight: 900
+    });
+    w.Promise.all([fontA.load(), fontC.load(), fontF.load()]).then(function() {
+      w.document.documentElement.className += " fonts-loaded";
+    });
+  })(this);
+</script>
+<script>
+  const scroll = new SmoothScroll('a[href*="#"]');
+    $('a.nav-link').on('click', () => {
+      const navbar = $('.navbar-collapse');
+      if (navbar && navbar.hasClass('show')) {
+        $('.navbar-toggler').click();
+      }
+    })
+</script>
+
+</body>
+
+</html>
